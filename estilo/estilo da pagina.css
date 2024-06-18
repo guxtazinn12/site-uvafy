@@ -1,0 +1,245 @@
+/* Define estilos padrão para todos os elementos */
+* {
+    /* Remove a margem e o preenchimento padrão */
+    margin: 0;
+    padding: 0;
+
+    /* Define a caixa de modelo como borda-box para incluir preenchimento e borda no tamanho total */
+    box-sizing: border-box;
+
+    /* Define a fonte padrão */
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-shadow: 2px 1px 5px #000;
+    /* Define a cor do texto padrão */
+    color: #3a2d32;
+}
+
+/* Estilos para o corpo da página */
+body {
+    /* Altera a cor de fundo */
+    background-color: #C1BFFA;
+
+    /* Centraliza o conteúdo verticalmente e horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para o Container principal da página */
+.container-pagina {
+    /* Define a cor de fundo */
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* Adiciona uma margem superior */
+    margin-top: 15px;
+
+    /* Define a largura */
+    width: 75%;
+    border-radius: 10px;
+
+    /* Centraliza o conteúdo verticalmente e horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para o Container do menu */
+.container-menu {
+    /* Define a cor de fundo */
+    background-color: #c1c1c1;
+    /* Define a largura */
+    width: 100%;
+
+    /* Define a altura */
+    height: 60px;
+
+    /* Adiciona um preenchimento interno */
+    padding: 0 2px 0 2px;
+}
+
+/* Estilos para os links dentro do Container do menu */
+.container-menu a {
+    /* Define a altura da linha para centralizar verticalmente */
+    line-height: 60px;
+    /* Define o tamanho da fonte */
+    font-size: 40px;
+    /* Define a cor do texto */
+    color: #5e2a8f;
+    /* Adiciona um preenchimento interno */
+    padding: 3px 6px 3px 6px;
+    /* Adiciona uma margem externa */
+    margin: 0 5px 0 -2px;
+    /* Remove a decoração do texto */
+    text-decoration: none;
+    /* Adiciona um raio de borda para suavizar as bordas */
+    border-radius: 10px;
+}
+
+/* Estilos para os links quando o mouse está sobre eles */
+.container-menu a:hover {
+    /* Altera a cor de fundo quando o mouse está sobre o link */
+    background-color: #C1BFFA;
+    /* Altera a cor do texto quando o mouse está sobre o link */
+}
+
+/* Estilos para o último link no menu */
+#ultimo-link {
+    /* Remove a borda à direita */
+    border-right: none;
+}
+
+
+
+/* Estilos para o Container de busca */
+.container-busca {
+    /* Define a largura */
+    width: 100%;
+    /* Adiciona um preenchimento */
+    padding: 8px 0;
+    /* Adiciona uma borda na parte inferior */
+    border-bottom: 1px solid #3a2d32;
+}
+/* Estilos para a página ativa */
+.pagina-ativa {
+    /* Altera a cor de fundo */
+    background-color: #d3d0d1;
+
+}
+/* Estilos para o input e o botão dentro do Container de busca */
+.container-busca input, button {
+    /* Remove as bordas */
+    border: none;
+    /* Adiciona um raio de borda para suavizar as bordas */
+    border-radius: 5px;
+    /* Remove a borda ao receber foco */
+    outline: 0;
+
+    /* Adiciona um preenchimento */
+    padding: 2px 7px;
+    /* Altera o cursor para indicar interação */
+    cursor: pointer;
+
+    /* Define a cor de fundo */
+    background-color: #3a2d32;
+    /* Define a cor do texto */
+    color: #FFE3DC;
+}
+
+/* Estilos específicos para o input dentro do Container de busca */
+.container-busca input {
+    /* Define a largura */
+    width: 300px;
+    /* Define o tamanho da fonte */
+    font-size: 25px;
+    /* Altera o cursor para o formato de texto */
+    cursor: text;
+}
+
+/* Estilos específicos para o botão dentro do Container de busca */
+.container-busca button {
+    /* Define o tamanho da fonte */
+    font-size: 25px;
+    /* Adiciona um preenchimento */
+    padding: 2px 10px;
+}
+
+/* Estilos para o Container de conteúdo */
+.container-conteudo {
+    /* Define a largura */
+    width: 100%;
+    /* Adiciona uma margem superior */
+    margin-top: 15px;
+    /* Centraliza o conteúdo verticalmente e horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para o Container de vídeos */
+.container-videos {
+    /* Define a largura do Container como 90% da largura do elemento pai */
+   
+    /* Define a altura automática para se ajustar ao conteúdo */
+   
+
+    /* Exibe os itens como uma linha flexível */
+    display: flex;
+    /* Permite que os itens sejam quebrados em várias linhas conforme necessário */
+    flex-wrap: wrap;
+    /* Alinha os itens verticalmente ao centro */
+    align-items: center;
+    /* Alinha os itens horizontalmente ao centro */
+    justify-content: center;
+}
+.capa-img{
+    width: 50%;
+    height: 50px;
+}
+
+/* Estilos para o Container de cada vídeo */
+.container-video {
+    /* Exibe os itens como uma coluna flexível */
+    display: flex;
+    /* Define a direção da coluna */
+    flex-direction: column;
+    /* Define as margens do Container */
+    margin: 10px 10px 0 0;
+
+    /* Centraliza o conteúdo horizontalmente */
+    text-align: center;
+    /* Define o tamanho da fonte */
+    font-size: 1.5rem;
+}
+
+/* Estilos para a capa do vídeo */
+.capa-video {
+    /* Define a largura da capa de vídeo */
+    width: 280px;
+    height: 200px;
+    /* Adiciona uma borda de 1px sólida preta */
+    border: 1px solid #000;
+}
+
+
+/* Estilos para o Container do rodapé */
+.container-rodape {
+    /* Exibe os itens como uma linha flexível */
+    display: flex;
+    /* Centraliza o texto horizontalmente */
+    text-align: center;
+    /* Alinha os itens à esquerda */
+    justify-content: left;
+    /* Alinha os itens verticalmente ao centro */
+    align-items: center;
+    
+    /* Define a largura do Container como 100% da largura do elemento pai */
+    width: 100%;
+    /* Adiciona uma margem superior de 15px */
+    margin-top: 15px;
+    /* Define a cor de fundo do Container */
+    background-color: #202020;
+}
+
+/* Estilos para o texto dentro do Container do rodapé */
+.container-rodape p {
+    /* Define a cor do texto */
+    color: #FFE3DC;
+
+    /* Adiciona uma margem à esquerda de 25% */
+    margin-left: 25%;
+}
+
+/* Estilos para a imagem do rodapé */
+.imagem-rodape {
+    /* Define a largura da imagem */
+
+    max-width:100px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+    /* Define as margens da imagem */
+    margin: 10px 0 10px 20px;
+}
